@@ -31,3 +31,8 @@ price: 78,
 
 const isPhotos = products.filter(product => (product.photos !== undefined && product.photos.length !== 0))
 console.log(isPhotos);
+
+products.sort((a, b) => a.price - b.price)
+for (const elem of products) {
+    console.log(elem);
+}
